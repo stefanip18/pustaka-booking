@@ -1,27 +1,28 @@
 <html>
 
 <head>
-     <title>Form Input Matakuliah</title>
+     <title>Form Input Siswa</title>
 </head>
 
 <body>
     <center>
-        <form action="<?= base_url('matakuliah/cetak'); ?>"
+        <form action="<?= base_url('siswa/cetak'); ?>"
 method="post">
             <table>
                 <tr>
                     <th colspan="8">
-                         Form Input Data Mata Siswa
+                         FORM INPUT DATA SISWA
                     </th>
                 </tr>
                 <tr>
-                    <td colspan="8">
+                    <td colspan="3">
                         <hr>
                     </td>
                 </tr>
+
                 <tr>
                     <th>NAMA SISWA</th>
-                    <th>:</th>
+                    <td>:</td>
                     <td>
                     <input type="text" name="nama" id="nama">
                     </td>
@@ -47,7 +48,7 @@ method="post">
                 <th>TANGGAL LAHIR</th>
                     <td>:</td>
                     <td>
-                    <input type="text" name="tanggal lahir" id="tanggallahir">
+                    <input type="text" name="tanggal lahir" id="tanggal_lahir">
                     </td>
                 </tr>
 
@@ -55,7 +56,7 @@ method="post">
                 <th>TEMPAT LAHIR</th>
                     <td>:</td>
                     <td>
-                    <input type="text" name="tempat lahir" id="tempatlahir">
+                    <input type="text" name="tempat lahir" id="tempat_lahir">
                     </td>
                 </tr>
 
@@ -71,11 +72,17 @@ method="post">
                 <th>JENIS KELAMIN</th>
                     <td>:</td>
                     <td>
-                        <button name="jenis kelamin" id="jeniskelamin">
-                            <option value="">Pilih Jenis Kelamin</option>
-                            <option value="2">Perempuan</option>
-                            <option value="3">Laki-Laki</option>
-                        </button>
+
+                        
+                            <form action=""
+                            method="post">
+                        <br>
+                            <input type="radio" 
+                            name="jeniskelamin" value="Perempuan"checked>Perempuan
+                        </br>
+                            <input type="radio" 
+                            name="jeniskelamin" value="Laki-laki"checked>Laki-laki
+                                
                     </td>
                 </tr>
 
@@ -83,21 +90,25 @@ method="post">
                 <th>AGAMA</th>
                     <td>:</td>
                     <td>
-                        <select name="agama" id="agama">
-                            <option value="">Pilih Agama</option>
-                            <option value="2">Islam</option>
-                            <option value="3">Kristen</option>
-                            <option value="4">Katolik</option>
-                            <option value="5">Budha</option>
-                            <option value="6">Hindu</option>
-                            <option value="7">Protestan</option>
-                            <option value="8">Khonghucu</option>  
-                         </select>
+                            <select name="agama" id="agama">
+                                <option value="">Pilih Agama</option>
+                                <option value="Islam">Islam</option>
+                                <option value="3Kristen">Kristen</option>
+                                <option value="Katolik">Katolik</option>
+                                <option value="Budha">Budha</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Protestan">Protestan</option>
+                                <option value="Khonghucu">Khonghucu</option>  
+                            </select>
                     </td>
                 </tr>
+
+                
                 <tr>
                     <td colspan="8" align="center">
-                        <input type="submit" value="Submit">
+                        <br>
+                            <input type="submit" value="Submit">
+                        </br>
                     </td>
                 </tr>
             </table>

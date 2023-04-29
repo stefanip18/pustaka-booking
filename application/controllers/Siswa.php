@@ -15,10 +15,10 @@ class Siswa extends CI_Controller
             'nama' => $this->input->post('nama'),
             'nis' => $this->input->post('nis'),
             'kelas' => $this->input->post('kelas'),
-            'tanggal lahir' => $this->input->post('tanggallahir'),
-            'tempat lahir' => $this->input->post('tempatlahir'),
+            'tanggal_lahir' => $this->input->post('tanggal lahir'),
+            'tempat_lahir' => $this->input->post('tempat lahir'),
             'alamat' => $this->input->post('alamat'),
-            'jenis kelamin' => $this->input->post('jeniskelamin'),
+            'jenis_kelamin' => $this->input->post('jenis kelamin'),
             'agama' => $this->input->post('agama')
         ];
 

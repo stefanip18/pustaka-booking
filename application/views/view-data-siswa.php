@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Tampil Data Matakuliah</title>
+    <title>Tampil Data Siswa</title>
 </head>
 <body>
     <center>
@@ -45,7 +45,7 @@
                 <td>TANGGAL LAHIR</td>
                 <td>:</td>
                 <td>
-                    <?= $tanggal; ?>
+                    <?= $tanggal_lahir; ?>
                 </td>   
             </tr>
 
@@ -53,7 +53,7 @@
                 <td>TEMPAT LAHIR</td>
                 <td>:</td>
                 <td>
-                    <?= $tempatlahir; ?>
+                    <?= $tempat_lahir; ?>
                 </td>   
             </tr>
 
@@ -69,7 +69,7 @@
                 <td>JENIS KELAMIN</td>
                 <td>:</td>
                 <td>
-                    <?= $jeniskelamin; ?>
+                    <?= $jenis_kelamin; ?>
                 </td>   
             </tr>
 
@@ -82,9 +82,11 @@
             </tr>
 
             <tr>
-            <td colspan="8" align="center">
+            <td colspan="3" align="center"><br>
             <a href="<?= base_url('siswa');
-            ?>">Kembali</a>
+
+                ?>">Kembali</a>
+                
             </td>
         </tr>
     </table>
